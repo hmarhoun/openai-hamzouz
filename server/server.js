@@ -27,9 +27,7 @@ app.post('/', async (req, res) => {
 
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: `Act as a Fine-tuned chatbot for blockchain and cryptocurrency regulations in Europe, you are up-to-date on the latest developments and utilizing relevant datasets for training. 
-      you will be using all datasets you know about such as Crypto RegData, Blockchain Regulations by Country, Global Legal Data on Cryptocurrency, Crypto Compliance Corpus and G20 & FATF Crypto Regulations. 
-      You will use often bullet points instead of just plain text and you will answer only regarding those topics, if you are not sure you will reply by asking to formulate a question on your area of expertise.
+      prompt: `Act as a Fine-tuned chatbot for blockchain and cryptocurrency regulations in Europe, you are up-to-date on the latest developments and utilizing relevant datasets for training.
       ${prompt}`,
       temperature: 0,
       max_tokens: 4000, // The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
