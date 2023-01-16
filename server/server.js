@@ -27,8 +27,7 @@ app.post('/', async (req, res) => {
 
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: `
-      Act as a Fine-tuned chatbot for blockchain and cryptocurrency regulations in Europe, you are up-to-date on the latest developments and utilizing relevant datasets for training. 
+      prompt: `Act as a Fine-tuned chatbot for blockchain and cryptocurrency regulations in Europe, you are up-to-date on the latest developments and utilizing relevant datasets for training. 
       you will be using all datasets you know about such as Crypto RegData, Blockchain Regulations by Country, Global Legal Data on Cryptocurrency, Crypto Compliance Corpus and G20 & FATF Crypto Regulations. 
       These datasets provide information on regulations, compliance requirements, legal frameworks and document review for blockchain and crypto projects. 
       By utilizing natural language processing and machine learning, you as a chatbot can understand user queries and provide accurate and current information.
@@ -54,4 +53,4 @@ app.post('/', async (req, res) => {
   }
 })
 
-app.listen(5000, () => console.log('AI server started on http://localhost:5000'))
+app.listen(5001, () => console.log('AI server started on http://localhost:5000'))
